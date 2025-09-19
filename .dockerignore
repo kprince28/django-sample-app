@@ -6,11 +6,6 @@ __pycache__/
 *.so
 *.egg-info/
 *.egg
-*.log
-*.pot
-*.pyc
-*.pkl
-*.sqlite3
 
 # Virtualenv
 venv/
@@ -26,25 +21,21 @@ media/
 staticfiles/
 *.log
 
-# VSCode
-.vscode/
-.history/
-*.code-workspace
+# Git
+.git
+.gitignore
 
-# PyCharm
+# IDEs
+.vscode/
 .idea/
 *.iml
 *.ipr
 *.iws
-out/
 
 # Docker
-*.pid
-*.seed
-*.cover
-.docker/
-docker/
-*.swp
+Dockerfile*
+docker-compose*.yml
+.dockerignore
 
 # OS
 .DS_Store
@@ -52,7 +43,7 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 
-# Tests
+# Tests & coverage
 .coverage
 htmlcov/
 .tox/
