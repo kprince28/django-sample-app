@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.egg
+*.log
+*.pot
+*.pyc
+*.pkl
+*.sqlite3
+
+# Virtualenv
+venv/
+ENV/
+env/
+.venv/
+
+# Django
+*.db
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+*.log
+
+# VSCode
+.vscode/
+.history/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Docker
+*.pid
+*.seed
+*.cover
+Dockerfile.*
+docker-compose*.yml
+.dockerignore
+.docker/
+docker/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Tests
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+.mypy_cache/
