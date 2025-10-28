@@ -25,12 +25,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy project
 COPY . .
 
-# Collect static files
-RUN python manage.py collectstatic --noinput --clear
-
-# Migrate the migration files
-RUN python manage.py migrate
-
 # Change owner
 RUN chown -R appuser:appuser /app
 USER appuser
@@ -39,4 +33,4 @@ USER appuser
 EXPOSE 8000
 
 # Start server
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+ENTRYPOINT ["sh", "/app/startapp.sh"]
